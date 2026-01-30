@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Navbar';
 import About from './About';
 import { Routes, Route, useLocation, Link } from 'react-router-dom';
-import { animate, AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
 
@@ -32,14 +32,6 @@ function App() {
       </Routes>
       </AnimatePresence>
     </div>
-  )
-}
-
-function MovePage({ Component, pageProps, router }) {
-  return (
-    <AnimatePresence>
-      <Component key={router.route} {...pageProps} />
-    </AnimatePresence>
   )
 }
 

@@ -1,7 +1,6 @@
 
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { Motion } from 'framer-motion';
 
 function Navbar() {
   return (
