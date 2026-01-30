@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import logo from './kirby.png';
 import './App.css';
-
+import Navbar from './Navbar';
 function App() {
-  return (
+
+
+  return(
     <div className="App">
+      <Navbar/>
+      <div className="logoRow">
+     <SpinningLogo speed = {30}/>
+     <TextBox/>
+     </div>
+     </div>
+  )
+}
+function SpinningLogo({ speed = 20})
+{
+return (
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <img src={logo} className="App-logo" alt="logo" style={{animationDuration: `${speed}s`}}/>
+        <a>
+          test
         </a>
       </header>
+)
+}
+function TextBox()
+{
+  return (
+    <header className="App-header">
+    <div>
+      <p>
+        bruh testing to see if text wrapping works inside of this textbox function
+      </p>
     </div>
-  );
+    </header>
+  )
 }
 
 export default App;
