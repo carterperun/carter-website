@@ -2,7 +2,7 @@ import logo from './kirby.png';
 import './App.css';
 import Navbar from './Navbar';
 import About from './About';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return(
@@ -25,9 +25,9 @@ function SpinningLogo({ speed = 20})
 return (
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" style={{animationDuration: `${speed}s`}}/>
-        <a>
+        <Link to="/about">
           test
-        </a>
+        </Link>
       </header>
 )
 }
