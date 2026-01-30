@@ -1,17 +1,23 @@
 import logo from './kirby.png';
 import './App.css';
 import Navbar from './Navbar';
+import About from './About';
+import { Routes, Route } from 'react-router-dom';
+
 function App() {
-
-
   return(
     <div className="App">
       <Navbar/>
-      <div className="logoRow">
-     <SpinningLogo speed = {30}/>
-     <TextBox/>
-     </div>
-     </div>
+      <Routes>
+        <Route path="/" element={
+          <div className="logoRow">
+            <SpinningLogo speed={30}/>
+            <TextBox/>
+          </div>
+        } />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
   )
 }
 function SpinningLogo({ speed = 20})
