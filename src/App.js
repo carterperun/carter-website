@@ -40,9 +40,9 @@ function SpinningLogo({ speed = 20})
 return (
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" style={{animationDuration: `${speed}s`}}/>
-        <Link to="/about">
-          test
-        </Link>
+        <p>
+          Spinning Kirby
+        </p>
       </header>
 )
 }
@@ -52,7 +52,7 @@ function TextBox()
     <header className="App-header">
     <div>
       <p>
-        bruh testing to see if text wrapping works inside of this textbox function
+        This is test that will wrap around the edge of the screen and other elements of the webpage automatically due to being in a grid element.
       </p>
     </div>
     </header>
