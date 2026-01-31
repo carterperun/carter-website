@@ -1,11 +1,11 @@
 .App {
   text-align: center;
-  background-color: #402c34;
+  background-color: #61dafb;
 }
 
 body {
   margin: 0;
-  background-color: #402c34;
+  background-color: #61dafb;
 }
 .App-logo {
   height: 40vmin;
@@ -19,7 +19,7 @@ body {
 }
 
 .App-header {
-  background-color: #402c34;
+  background-color: #61dafb;
   /* min-height: 20vh;
   min-width: 20vw; */
   display: inline-flex;
