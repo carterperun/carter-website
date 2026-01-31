@@ -2,7 +2,7 @@ import logo from './kirby.png';
 import './App.css';
 import Navbar from './Navbar';
 import About from './About';
-import { Routes, Route, useLocation, Link } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
